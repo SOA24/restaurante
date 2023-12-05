@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header ><h1 style="font-size: 60px;" > <strong> <center>pedido</center></strong></h1></header>
+    <main class="container-fluid">
+      
+        <article class="container-fluid col-lg-12">
+            <form>
+                <fieldset>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                          <label for="validationCustom01" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="validationCustom01" value="" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationCustom02" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" id="validationCustom02" value="" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationCustomUsername" class="form-label">Username</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                              porfavir elija un Username
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationCustom03" class="form-label">City</label>
+                          <input type="text" class="form-control" id="validationCustom03" required>
+                          <div class="invalid-feedback">
+                            porfavor ponga su ciudad
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationCustom04" class="form-label">State</label>
+                          <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            porfavor elija su provincia
+                          </div>
+                        </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Descripcion del pedido</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="60"></textarea>
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFileMultiple" class="form-label">Carnet de identidad</label>
+                          <input class="form-control" type="file" id="formFileMultiple" multiple>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">Bebida</label>
+                            <select class="form-select" id="validationCustom04" required>
+                              <option selected disabled value="">elija...</option>
+                              <option>fanta</option>
+                              <option>fanta</option>
+                              <option>fanta</option>
+                              <option>fanta</option>
+                              <option>fanta</option>
+                              <option>fanta</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              porfavor elija una Bebida
+                            </div>
+                          </div>
+                          <br>
+                        <label>Cantidad</label>
+                        <input type="range" min="1" max="100"  id="Cantidad" name="Cantidad"/>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <label>Departamento</label>
+                        <input type="text" id="departamentos" name="departamentos" list="lista_departamentos"/>
+                        <datalist id="lista_departamentos">
+                            <option value="Sucre">
+                            <option value="Santa Cruz">
+                            <option value="La Paz ">
+                            <option value="Pando">
+                            <option value="Beni">
+                            <option value="Tarija">
+                            <option value="Potosi">
+                            <option value="Oruro">
+                            <option value="Cochabanba">
+                        </datalist>
+                    </fieldset>
+                    <br>
+                    <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                          </label>
+                          <div class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                      </div>
+
+                      </form>
+                   
+                
+                
+            </form>
+            <br>
+            <br>
+            <div>
+                <table class="table table-danger" id="tableform">
+                    <thead>
+                      <tr>
+                        <th scope="col">BEBIDAS</th>
+                        <th scope="col">PRECIO</th>
+                        <th scope="col">CONTENIDO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Coca-Cola</th>
+                        <td>6bs</td>
+                        <td>600ml</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">fanta</th>
+                        <td>5bs</td>
+                        <td>500ml</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">sprite</th>
+                        <td >6bs</td>
+                        <td>500ml</td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </article>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"  aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <table id="tabla" class=" table-bordered">
+                  <thead>
+                      <tr>
+                          <td>Nº</td>
+                          <td>Descripción</td>
+                          <td>Precio</td>
+                      
+                      </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+              </table>
+              <div class="d-grid gap-2">
+                  <button type="button" name="" id="btnElim" class="btn btn-primary">ELIMINAR</button>
+              </div>
+          </div>
+      </div>
+        
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+    </script>
+  
+    <script src="/js/bootstrap.min.js">
+    </script>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>

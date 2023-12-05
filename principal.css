@@ -1,0 +1,49 @@
+#inicio{
+    font-size: 2rem;
+    color: black;
+}
+#inicio:hover{
+    color: yellow;
+}
+#nav:hover{
+    color: yellow;
+}
+@media screen and (max-width:700px) and (min-width:200px)
+{ 
+    #collapseThree{
+        font-size: 1rem;
+        color: black;
+        font-weight: bold ;
+
+}
+}
+#HO{
+    transition: trasform 0,3s;
+}
+#HO1{
+    transition: trasform 0,3s;
+}
+
+#HO2{
+    transition: trasform 0,3s;
+}
+#HO3{
+    transition: trasform 0,3s;
+}
+#HO4{
+    transition: trasform 0,3s;
+}
+#HO5{
+    transition: trasform 0,3s;
+}
+
+#Ve{
+    transition: trasform 1s;
+}
+
+.selec{
+    background-color:green;
+
+}
+
+
