@@ -30,11 +30,11 @@
         </nav>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"  aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Ojbetos seleccionar</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <table id="tabla" class=" table-bordered">
+                <table id="tabla" class=" table bg-transparent">
                     <thead>
                         <tr>
                             <td>Nº</td>
@@ -48,28 +48,29 @@
                     </tbody>
                 </table>
                 <div class="d-grid gap-2">
-                    <a style="font-weight: bold;" href="formulario.html"> <button  type="button" name="" id="btnElim" class="btn btn-primary"></button>COMPRAR</a>
+                    <a style="font-weight: bold;" href="formulario.html" id="btnElim" class="btn btn-primary">COMPRAR</a>
                    
                 </div>
             </div>
         </div>
     </header>
     <br>
-  <main class="container-fluid">
-    <table class="table table-danger">
-        <tr>
-          <td>
+  <main class="conteiner-fluid bg-danger">
+    <section class="conteiner-fluid bg-danger">
+      <table class="table table-danger">
+        <div class="row">
+          <div class="d-flex justify-content-center col col-sm-12 col-md-6 col-lg-6">
             <div class="card" style="width: 18rem;">
               <img id="HO" src="imagenes/coca'cola.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 id="nombre" class="card-title">COCA-COLA</h5>
+                <h5 id="nombre" class="card-title">Coca Cola</h5>
                 <p id="Contenido" class="card-text">500ml</p>
                 <p id="costo" class="card-text"> 6bs</p>
                 <a id="btncomp1" href="#" class="btn btn-primary">pedir</a>
               </div>
             </div>
-          </td>
-          <td>
+          </div>
+          <div class="d-flex justify-content-center col col-sm-12 col-md-6 col-lg-6">
             <div class="card" style="width: 18rem;">
               <img id="HO1" src="imagenes/papsi.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -79,34 +80,33 @@
                 <a id="btncomp2" href="#" class="btn btn-primary">pedir</a>
               </div>
             </div>
-          </td>
-        </tr>
-
-        <tr>
-            <td>
-                <div class="card" style="width: 18rem;">
-                  <img id="HO2" src="imagenes/fanta.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 id="nombre3" class="card-title">Fanata</h5>
-                    <p id="Contenido3" class="card-text">500ml</p>
-                    <p id="costo3" class="card-text">6bs</p>
-                    <a id="btncomp3" href="#" class="btn btn-primary">pedir</a>
-                  </div>
-                </div>
-            </td>    
-          <td>
+          </div>
+          <div class="d-flex justify-content-center col col-sm-12 col-md-6 col-lg-6">
             <div class="card" style="width: 18rem;">
-              <img id="HO3" src="imagenes/sprete.png" class="card-img-top" alt="...">
+              <img id="HO2" src="imagenes/fanta.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 id="nombre4" class="card-title">sprite</h5>
-                <p id="Contenido4" class="card-text">500ml</p>
-                <p id="costo4" class="card-text">5bs</p>
-                <a id="btncomp4" href="#" class="btn btn-primary">pedir</a>
+                <h5 id="nombre3" class="card-title">Fanata</h5>
+                <p id="Contenido3" class="card-text">500ml</p>
+                <p id="costo3" class="card-text">6bs</p>
+                <a id="btncomp3" href="#" class="btn btn-primary">pedir</a>
               </div>
             </div>
-          </td>
-        </tr>
-      </table>
+        </div>    
+      <div class="d-flex justify-content-center col col-sm-12 col-md-6 col-lg-6">
+        <div class="card" style="width: 18rem;">
+          <img id="HO3" src="imagenes/sprete.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="nombre4" class="card-title">sprite</h5>
+            <p id="Contenido4" class="card-text">500ml</p>
+            <p id="costo4" class="card-text">5bs</p>
+            <a id="btncomp4" href="#" class="btn btn-primary">pedir</a>
+          </div>
+        </div>
+      </div>
+        </div>
+    </table>
+    </section>
+    
 
   </main>
   <footer>
@@ -118,8 +118,12 @@
 
   <script src="js/bootstrap.min.js">
   </script>
-   <script src="jquery-3.7.1.js"></script>
-   <script src="js.js"></script>
+
+  <script src="jquery-3.7.1.js">
+  </script>
+
+  <script src="js.js">
+  </script>
 </body>
 
 </html>
