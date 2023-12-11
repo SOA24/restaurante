@@ -16,12 +16,16 @@
 <body>
     <header class="conteiner border  " style="font-size: 1rem; font-weight: bold; ;">
       <nav class="navbar navbar-expand-lg " style="background-color: #003049;">
+
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Bistró Chic</a>
+
             <img src="imagenes/images.png" style="width: 5rem;" alt="">
+
             <button data="nav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
               <ul class="navbar-nav ">
                 <li class="nav-item">
@@ -30,10 +34,11 @@
               </ul>
               <ul class="navbar-nav ">
                 <li class="nav-item">
-  
-                  <button id="inicio" type="button" class="btn color dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <p class="fs-8"> <strong>inicio</strong></p>
-                  </button>
+                  <ul class="navbar-nav ">
+                    <li class="nav-item">
+                      <a id="inicio" class="fs-8 nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">inicio</a>
+                    </li>
+                  </ul>
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -106,9 +111,12 @@
                 </li>
               </ul>
             </div>
+            
           </div>
+
         </nav>
     </header>
+    
     <main class="conteiner-fluid">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -131,10 +139,9 @@
               <div class="card" style="width: 18rem;">
                 <img id="HO" src="imagenes/hamburguesa-salud_1-1852731_20200708213833--366x256.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">HAMBURGUESA</h5>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de pollo</p>
-                  <p class="card-text"> de carne</p>
+                  <h5 id="nombre" class="card-title">HAMBURGUESA</h5>
+                  <p id="Contenido" class="card-text"> de carne</p>
+                  <P id="costo" class="card-text">30bs</P>
                   <a id="btnmenu1" href="#" class="btn btn-primary">pedir</a>
                 </div>
               </div>
@@ -143,10 +150,9 @@
               <div class="card" style="width: 18rem;">
                 <img id="HO1" src="imagenes/huevo.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">HAMBURGUESA</h5>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
+                  <h5 id="nombre2" class="card-title">HAMBURGUESA</h5>
+                  <p id="Contenido2" class="card-text">con huevo</p>
+                  <p id="costo2" class="card-text">10bs</p>
                   <a id="btnmenu2" href="#" class="btn btn-primary">pedir</a>
                 </div>
               </div>
@@ -155,25 +161,24 @@
               <div class="card" style="width: 18rem;">
                 <img id="HO2" src="imagenes/alitas.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">HAMBURGUESA</h5>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
+                  <h5 id="nombre3" class="card-title">pollo</h5>
+                  <p id="Contenido3" class="card-text">picante</p>
+                  <p id="costo3" class="card-text">25bs</p>
                   <a id="btnmenu3" href="#" class="btn btn-primary">pedir</a>
                 </div>
               </div>
             </div>
           </div>
+          
   
           <div class="row">
             <div class="d-flex justify-content-center col col-sm-12 col-md-6 col-lg-4">
               <div class="card" style="width: 18rem;">
                 <img id="HO3" src="imagenes/salchi.webp" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">HAMBURGUESA</h5>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
+                  <h5 id="nombre4" class="card-title">SALCHIPAPA</h5>
+                  <p id="Contenido4" class="card-text"> picante</p>
+                  <p id="costo4" class="card-text"> 15bs</p>
                   <a id="btnmenu4" href="#" class="btn btn-primary">pedir</a>
                 </div>
               </div>
@@ -182,10 +187,9 @@
               <div class="card" style="width: 18rem;">
                 <img id="HO4" src="imagenes/images (3).jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">HAMBURGUESA</h5>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
+                  <h5 id="nombre5" class="card-title">TACOS</h5>
+                  <p id="Contenido5" class="card-text"> virria</p>
+                  <p id="costo5" class="card-text">18bs</p>
                   <a id="btnmenu5" href="#" class="btn btn-primary">pedir</a>
                 </div>
               </div>
@@ -194,10 +198,9 @@
               <div class="card" style="width: 18rem;">
                 <img id="HO5" src="imagenes/hamburguesa-salud_1-1852731_20200708213833--366x256.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">HAMBURGUESA</h5>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
-                  <p class="card-text"> de carne</p>
+                  <h5 id="nombre6" class="card-title">HAMBURGUESA</h5>
+                  <p id="Contenido6" class="card-text">especial</p>
+                  <p id="costo6" class="card-text"> 35bs</p>
                   <a id="btnmenu6" href="#" class="btn btn-primary">pedir</a>
                 </div>
               </div>
@@ -226,7 +229,7 @@
           <i class="fa-brands fa-tiktok"></i>
         </a1>
        </div>
-       <div class="col">
+       <div class="col ">
         <a1 href="#" style="--color: #4267B2">
           <i class="fa-brands fa-facebook"></i>
         </a1>
